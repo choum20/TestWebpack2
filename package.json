@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "lint": "eslint . || ECHO.",
+    "lint-fix": "eslint . --fix || ECHO.",
+    "webpack": "webpack --bail",
+    "freshtall": "npm cache clean --force && rm -rf node_modules && rm -f package-lock.json && npm install"
   },
   "repository": {
     "type": "git",
@@ -16,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/choum20/TestWebpack2/issues"
   },
-  "homepage": "https://github.com/choum20/TestWebpack2#readme"
+  "homepage": "https://github.com/choum20/TestWebpack2#readme",
+  "devDependencies": {
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
 }
