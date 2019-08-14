@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config ./webpack.config.dev.js",
-    "build": "webpack --config ./webpack.config.prod.js",
+    "start": "webpack-dev-server --config build-utils/webpack.config.js --env.env=dev",
+    "build": "webpack --config build-utils/webpack.config.js --env.env=prod",
     "lint": "eslint . || ECHO.",
     "lint-fix": "eslint . --fix || ECHO.",
     "webpack": "webpack --bail",
@@ -31,6 +31,7 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
   }
 }
