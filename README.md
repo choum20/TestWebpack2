@@ -1,5 +1,9 @@
 # TestWebpack2
 
+Sources:
+- https://github.com/rwieruch/advanced-react-webpack-babel-setup
+- https://www.robinwieruch.de/webpack-advanced-setup-tutorial/
+
 On commence par créer un projet sur github, après quoi on clone le repo pour créer le dossier du projet et avoir un fichier de config de git déjà prêt
  
 npm init (Version simplidiée npm init -y)
