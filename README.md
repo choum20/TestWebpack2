@@ -88,6 +88,11 @@ Pour tester le build résultant, on install un serveur web global et on le run
 	http-server dist (On peut changer le port en rajoutant -p 9000 par exemple)
 (Actuellement une erreur ERR_INVALID_REDIRECT apparait, il faut soit downgrade http-server en 0.9 ou juste rajouter index.html)
 
+Du coup on va plutôt utiliser local-web-server qu'on va installer globallement
+	npm install -g local-web-server
+	cd dist
+	ws
+	
 Pour faire un clean du dossier dist avant chaque build, on rajoute:
 npm install --save-dev html-webpack-plugin
 Dans le fichier webpack.config.js, on rajoute:
