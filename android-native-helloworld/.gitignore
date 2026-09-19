@@ -1,0 +1,12 @@
+# CMake / Visual Studio build output
+out/
+.vs/
+CMakeCache.txt
+CMakeFiles/
+
+# Gradle (if the project is later built with Android Studio / Gradle instead)
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
